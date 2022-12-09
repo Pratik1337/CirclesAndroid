@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:id="@+id/mainLayout"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_template_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inner_cl"
+            android:paddingBottom="12dp"
+            >
+
+            <ImageView
+                android:id="@+id/im_template_profilephoto"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/usr1" />
+
+            <ImageView
+                android:id="@+id/im_template_ring"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ring"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tx_template_user_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:text="Full name"
+                android:textSize="22dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/im_template_profilephoto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tx_template_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username/User tag"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@+id/tx_template_user_fullname"
+                app:layout_constraintTop_toBottomOf="@+id/tx_template_user_fullname" />
+
+            <TextView
+                android:id="@+id/tx_template_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Date of Post"
+                android:textSize="15dp"
+                card_view:layout_constraintStart_toEndOf="@+id/tx_template_username"
+                card_view:layout_constraintTop_toBottomOf="@+id/tx_template_user_fullname" />
+
+            <ImageView
+                android:id="@+id/im_template_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="530dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/place_holder_post"
+
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/im_template_profilephoto" />
+
+            <TextView
+                android:id="@+id/tx_others_profile_description"
+                android:layout_width="388dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="6dp"
+                android:text="Description"
+                android:textColor="#353535"
+                android:textSize="16dp"
+                app:layout_constraintVertical_bias="0.0"
+                card_view:layout_constraintStart_toStartOf="@+id/im_template_profilephoto"
+                card_view:layout_constraintTop_toBottomOf="@+id/im_template_post_image" />
+
+            <TextView
+                android:id="@+id/tx_template_hidden_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:visibility="invisible"
+                card_view:layout_constraintStart_toEndOf="@+id/tx_template_user_fullname"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tx_template_hidden_image_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                android:visibility="invisible"
+                card_view:layout_constraintStart_toEndOf="@+id/tx_template_hidden_email"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/ed_post_comment_input"
+                android:layout_width="398dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#ECECEC"
+                android:ems="10"
+                android:hint="Write a Comment"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:textSize="15dp"
+                android:visibility="gone"
+                card_view:layout_constraintStart_toStartOf="@+id/tx_template_likes_count"
+                card_view:layout_constraintTop_toBottomOf="@+id/tx_template_likes_count" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_nested"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                card_view:layout_constraintEnd_toEndOf="@+id/ed_post_comment_input"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toStartOf="@+id/ed_post_comment_input"
+                card_view:layout_constraintTop_toBottomOf="@+id/ed_post_comment_input" />
+
+            <TextView
+                android:id="@+id/tx_template_comment_count"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="cmt"
+                android:textAlignment="center"
+                android:textColor="#E6000000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                card_view:layout_constraintEnd_toEndOf="@+id/im_icon_comment"
+                card_view:layout_constraintHorizontal_bias="0.384"
+                card_view:layout_constraintStart_toStartOf="@+id/im_icon_comment"
+                card_view:layout_constraintTop_toBottomOf="@+id/im_icon_comment" />
+
+            <ImageView
+                android:id="@+id/im_icon_smiley"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:tag="mode0"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/tx_others_profile_description"
+                card_view:srcCompat="@drawable/smiler_like_bw" />
+
+            <ImageView
+                android:id="@+id/im_icon_comment"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="24dp"
+                android:tag="mode0"
+                card_view:layout_constraintBottom_toBottomOf="@+id/im_icon_smiley"
+                card_view:layout_constraintStart_toEndOf="@+id/im_icon_smiley"
+                card_view:srcCompat="@drawable/comment_icon" />
+
+            <TextView
+                android:id="@+id/tx_template_likes_count"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:text="Likes"
+                android:textAlignment="center"
+                android:textColor="#E6000000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                card_view:layout_constraintEnd_toEndOf="@+id/im_icon_smiley"
+                card_view:layout_constraintHorizontal_bias="0.538"
+                card_view:layout_constraintStart_toStartOf="@+id/im_icon_smiley"
+                card_view:layout_constraintTop_toBottomOf="@+id/im_icon_smiley" />
+
+            <ImageView
+                android:id="@+id/im_icon_bin"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="24dp"
+                android:tag="mode0"
+                android:visibility="visible"
+                card_view:layout_constraintBottom_toBottomOf="@+id/im_icon_comment"
+                card_view:layout_constraintStart_toEndOf="@+id/im_icon_comment"
+                card_view:srcCompat="@drawable/bin_icon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

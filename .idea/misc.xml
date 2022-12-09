@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/drawable/circle_shape.xml" value="0.3828125" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/drawable/gradient.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/drawable/square.xml" value="0.3828125" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_circle_home.xml" value="0.25" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_likes_view.xml" value="0.264" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_login_main.xml" value="0.42118863049095606" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_logout_main.xml" value="0.25" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_main2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_my_profile.xml" value="0.536" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_register_user.xml" value="0.33" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_selected_profile.xml" value="0.4" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_single_post_selected.xml" value="0.264" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_temp_landing_page.xml" value="0.4" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_update_my_profile.xml" value="0.264" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_upload_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/activity_welcome_screne.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/circles_selector.xml" value="0.4" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/comment_template.xml" value="0.1" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/like_single_row.xml" value="0.1" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/layout/post_template.xml" value="0.362555720653789" />
+        <entry key="..\:/Users/prati/AndroidStudioProjects/CirclesV0401/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

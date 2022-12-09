@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadPost">
+
+    <TextView
+        android:id="@+id/tx_others_profile_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="123dp"
+        android:text="Make a new Post"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/im_post_selectedimage"
+        android:layout_width="358dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_others_profile_description"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/bt_upload_post"
+        android:layout_width="184dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="6dp"
+        android:text="Upload"
+        app:layout_constraintStart_toStartOf="@+id/ed_post_description"
+        app:layout_constraintTop_toBottomOf="@+id/ed_post_description" />
+
+    <Button
+        android:id="@+id/bt_image_selector"
+        android:layout_width="184dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="12dp"
+        android:text="Select Image"
+        app:layout_constraintStart_toStartOf="@+id/im_post_selectedimage"
+        app:layout_constraintTop_toBottomOf="@+id/im_post_selectedimage" />
+
+    <EditText
+        android:id="@+id/ed_post_description"
+        android:layout_width="405dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description(Optional)"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_image_selector" />
+
+    <ProgressBar
+        android:id="@+id/pb_upload_post"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="180dp"
+        android:layout_height="168dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/im_post_selectedimage"
+        app:layout_constraintEnd_toEndOf="@+id/im_post_selectedimage"
+        app:layout_constraintStart_toStartOf="@+id/im_post_selectedimage"
+        app:layout_constraintTop_toTopOf="@+id/im_post_selectedimage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

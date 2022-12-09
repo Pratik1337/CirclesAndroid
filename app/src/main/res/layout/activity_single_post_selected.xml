@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SinglePostSelected">
+
+
+        <ImageView
+            android:id="@+id/im_selectedPost_profilephoto"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/usr1" />
+
+        <ImageView
+            android:id="@+id/im_selectedPost_ring"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ring"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tx_selectedPost_user_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:text="Full name"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/im_selectedPost_profilephoto"
+            app:layout_constraintTop_toTopOf="@+id/im_selectedPost_profilephoto" />
+
+        <TextView
+            android:id="@+id/tx_selectedPost_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username/User tag"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/tx_selectedPost_user_fullname"
+            app:layout_constraintTop_toBottomOf="@+id/tx_selectedPost_user_fullname" />
+
+        <TextView
+            android:id="@+id/tx_selectedPost_date"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Date of Post"
+            android:textSize="15dp"
+            app:layout_constraintStart_toEndOf="@+id/tx_selectedPost_username"
+            app:layout_constraintTop_toTopOf="@+id/tx_selectedPost_username" />
+
+        <com.zolad.zoominimageview.ZoomInImageView
+            android:id="@+id/im_selectedPost_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+
+
+            android:src="@drawable/place_holder_post"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_selectedPost_profilephoto" />
+
+
+        <TextView
+            android:id="@+id/tx_selectedPost_description"
+
+            android:layout_width="388dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Description"
+            android:textColor="#353535"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/im_selectedPost_post_image"
+            app:layout_constraintTop_toBottomOf="@+id/im_selectedPost_post_image" />
+
+        <EditText
+            android:id="@+id/ed_selectedPost_post_comment_input"
+            android:layout_width="398dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:background="#ECECEC"
+            android:ems="10"
+            android:hint="Write a Comment"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_selectedPost_likes_count" />
+
+        <ImageView
+            android:id="@+id/im_selectedPost_icon_comment"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/comment_icon"
+            android:tag="mode0"
+            app:layout_constraintBottom_toBottomOf="@+id/im_selectedPost_icon_smiley"
+            app:layout_constraintStart_toEndOf="@+id/im_selectedPost_icon_smiley" />
+
+        <ImageView
+            android:id="@+id/im_selectedPost_icon_smiley"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/smiler_like_bw"
+            android:tag="mode0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx_selectedPost_description" />
+
+        <TextView
+            android:id="@+id/tx_selectedPost_comment_count"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:text="no"
+            android:textAlignment="center"
+            android:textColor="#E6000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/im_selectedPost_icon_comment"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="@+id/im_selectedPost_icon_comment"
+            app:layout_constraintTop_toBottomOf="@+id/im_selectedPost_icon_comment" />
+
+        <TextView
+            android:id="@+id/tx_selectedPost_likes_count"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="4dp"
+            android:text="Likes"
+            android:textAlignment="center"
+            android:textColor="#E6000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/im_selectedPost_icon_smiley"
+            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintStart_toStartOf="@+id/im_selectedPost_icon_smiley"
+            app:layout_constraintTop_toBottomOf="@+id/im_selectedPost_icon_smiley" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_selectedPost_nested"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/ed_selectedPost_post_comment_input"
+            app:layout_constraintTop_toBottomOf="@+id/ed_selectedPost_post_comment_input" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
+
